@@ -9,7 +9,7 @@
 #' @return A sparse matrix reprsentation of the SNPs along with a consensus
 #'
 #' @examples
-#' fasta.file.name <- system.file("extdata", "seqs.fa", package = "fastbaps")
+#' fasta.file.name <- system.file("extdata", "seqs.fa", package = "pairsnp")
 #' sparse.data <- import_fasta_sparse(fasta.file.name)
 #'
 #' @export
