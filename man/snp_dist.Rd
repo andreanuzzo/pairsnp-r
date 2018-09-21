@@ -4,10 +4,12 @@
 \alias{snp_dist}
 \title{snp_dist}
 \usage{
-snp_dist(sparse.data)
+snp_dist(sparse.data, compare.n = FALSE)
 }
 \arguments{
 \item{sparse.data}{a sparse SNP data object returned from import_fasta_sparse}
+
+\item{compare.n}{whether to count comparisons with gaps in distance calculation}
 }
 \value{
 A pairwise snp distance matrix
