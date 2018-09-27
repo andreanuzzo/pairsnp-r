@@ -19,6 +19,11 @@ import_fasta_sparse <- function(fasta.file.name){
   if(!file.exists(fasta.file.name)) stop(paste("Can't locate file", fasta.file.name))
 
   snp.data <- pairsnp:::import_fasta_to_vector_each_nt(fasta.file.name)
+
+  if(snp.data$seq.length==-1) stop("Error! sequences are of different lengths!")
+  if(snp.data$num.seqs==0) stop("File does not contain any sequences!")
+
+
   snp.data$seq.names <-  gsub("^>","",snp.data$seq.names)
 
   snp.matrix <- Matrix::sparseMatrix(i=snp.data$i,

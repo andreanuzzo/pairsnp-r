@@ -27,6 +27,9 @@ List import_fasta_to_vector_each_nt(std::string file) {
 
 
   while((l = ks.read(seq)) >= 0) {
+    if(seq.seq.length()!=seq_length) {
+      return List::create(Named("seq.length") = -1);
+    }
     // std::cout << seq.name << std::endl;
     // std::cout << seq.seq << std::endl;
     for(int j=0; j<seq_length; j++){

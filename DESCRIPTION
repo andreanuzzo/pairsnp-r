@@ -13,3 +13,4 @@ Imports: Rcpp,
     ape,
     Matrix
 RoxygenNote: 6.0.1
+Suggests: testthat
