@@ -7,7 +7,7 @@ The R version can be installed using devtools
 
 ```
 #install.packages("devtools")
-devtools::install_github("gtonkinhill/pairsnp", subdir = "R/pairsnp")
+devtools::install_github("gtonkinhill/pairsnp-r")
 ```
 
 ## Quick Start
