@@ -6,7 +6,7 @@
 #' @importFrom Rcpp sourceCpp
 #' @import Matrix
 #'
-#' @param sparse.matrix a sparse SNP data object returned from import_fasta_sparse
+#' @param sparse.data a sparse SNP data object returned from import_fasta_sparse
 #'
 #' @return A pairwise snp similarity matrix
 #'

@@ -1,5 +1,5 @@
 #include <Rcpp.h>
-#include "kseq.hpp"
+#include "kseq.h"
 #include <iostream>
 #include <fcntl.h>
 #include <stdio.h>
@@ -22,9 +22,9 @@ List import_fasta_to_vector_each_nt(std::string file) {
 
   l = ks.read(seq);
   int seq_length = seq.seq.length();
-  int allele_counts[5][seq_length];
-  memset(allele_counts, 0, 5*seq_length*sizeof(int));
-
+  // int allele_counts[5][seq_length];
+  // memset(allele_counts, 0, 5*seq_length*sizeof(int));
+  std::vector<std::vector<int> > allele_counts(5, std::vector<int>(seq_length));
 
   while((l = ks.read(seq)) >= 0) {
     if(seq.seq.length()!=seq_length) {
