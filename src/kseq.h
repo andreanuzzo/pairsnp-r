@@ -227,12 +227,16 @@ private:
   }
 
   char *buf;
+
+
+
+  const unsigned int bufferSize;
+  ret_t f;
+  int is_eof;
   int begin;
   int end;
-  int is_eof;
-  ret_t f;
   ReadFunction readfunc;
-  const unsigned int bufferSize;
+
 };
 
 #endif
