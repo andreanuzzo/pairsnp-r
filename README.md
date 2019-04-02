@@ -1,5 +1,6 @@
 # pairsnp-r
 
+[![Travis-CI Build Status](https://travis-ci.org/gtonkinhill/pairsnp-r.svg?branch=master)](https://travis-ci.org/gtonkinhill/pairsnp-r)
 
 ## Installation
 
@@ -7,7 +8,7 @@ The R version can be installed using devtools
 
 ```
 #install.packages("devtools")
-devtools::install_github("gtonkinhill/pairsnp", subdir = "R/pairsnp")
+devtools::install_github("gtonkinhill/pairsnp-r")
 ```
 
 ## Quick Start
